@@ -1,0 +1,97 @@
+@charset "utf-8";
+h1{ font-size: 48px;}
+p{font-size: 25px;}
+body{font-size:15px;
+      margin: 0;
+    cursor: default;}
+ul{list-style:none;
+   padding-left: 0;}
+a{ text-decoration: none;
+    color : white;}
+
+/*navar*/
+#navbar{ display:flex;
+    justify-content:space-between;
+    background-color: #c79100;
+    align-items: center;
+    color :white;
+    padding:16px;
+}
+.navbar_logo{font-size:20px;
+         font-weight: bold;}
+.navbar_namu{display:flex;}
+.navbar_namu_item{
+    padding:8px 12px;
+    margin:0 4px;
+    cursor :pointer;
+}
+.navbar_namu_item.active{
+border: 1px solid white;
+border-radius : 4px;
+}
+.navbar_namu_item:hover{
+    background-color: tomato;
+    border-radius : 4px;
+}
+#home{
+    /*background : url(imgs/back.JPG) */
+    background-color : #fff350;
+     /*center/cover no-repeat; 이미지를 반응형으로 가운데 배치*/
+     padding: 40px;
+     text-align: center;
+}
+
+.home_avatar{
+    width:250px;
+    height:250px;
+    border-radius:50%;
+    border : 2px solid white;
+}
+#about{
+    width: 100%; height: 100vh;
+   text-align: center;
+   background-color:#ffc107; 
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+#skills{width: 100%; height: 100vh;
+    background-color: brown;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.skills_dexcription{
+    width: 50%; height: 40vh;
+    display: flex;justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+.skills_dexcription li{width: 100px; height: 100px;}
+.skills_dexcription li img{width: 100%; height: 100%;}
+
+#project{width: 100%; height: auto;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+    background-color: darkgoldenrod;}
+
+
+.project1{width: 80%; height: auto;background-color: #fff350;
+}
+.project1 li{width: 100%; height: 60vh;
+    margin-bottom: 10%;
+}
+.project1 li img{width: 100%; height: 100%;}
+ @media all and (min-width:800px){
+    .skills_dexcription{ padding-top: 60px;
+        width: 80%;}
+
+  .project1{display: flex;
+    width: 90%;}      
+ .project1 li{width: 80%;margin-bottom: 0; margin-left: 10px;}
+
+}   
